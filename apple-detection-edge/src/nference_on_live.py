@@ -6,7 +6,7 @@ import cv2
 from ultralytics import YOLO
 
 WEIGHTS_PATH = "apple-detection-edge/models/best_int8.tflite"
-VIDEO_PATH = "apple-detection-edge/testimg/Apple for food belt conveyor.mp4"       # <-- your video file
+VIDEO_PATH = "apple-detection-edge/testimg/videoplayback.mp4"       # <-- your video file
 IMG_SIZE = 320
 CONF_THRESHOLD = 0.25
 SAVE_PATH = "apple-detection-edge/annotedimg"  
