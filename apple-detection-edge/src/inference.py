@@ -8,7 +8,7 @@ import cv2
 from ultralytics import YOLO
 
 # ---- Edit these directly for now ----
-WEIGHTS_PATH = "models/best_int8.tflite"
+WEIGHTS_PATH = "apple-detection-edge/models/best_int8.tflite"
 IMAGE_PATH = "testimg/test2.jpg"
 IMG_SIZE = 320
 CONF_THRESHOLD = 0.25
