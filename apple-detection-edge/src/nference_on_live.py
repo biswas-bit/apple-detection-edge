@@ -5,11 +5,12 @@ inference_video.py — Detect apples in a video file (frame by frame).
 import cv2
 from ultralytics import YOLO
 
-WEIGHTS_PATH = "apple-detection-edge/models/best_int8.tflite"
-VIDEO_PATH = "apple-detection-edge/testimg/videoplayback.mp4"       # <-- your video file
+WEIGHTS_PATH = "apple-detection-edge/models/best.pt"
+VIDEO_PATH = "apple-detection-edge/testimg/Apple for food belt conveyor.mp4"       # <-- your video file
 IMG_SIZE = 320
-CONF_THRESHOLD = 0.25
+CONF_THRESHOLD = 0.1
 SAVE_PATH = "apple-detection-edge/annotedimg"  
+IOU_THRESHOLD = 0.3
 
 model = YOLO(WEIGHTS_PATH)
 cap = cv2.VideoCapture(VIDEO_PATH)   # file path instead of camera index 0
@@ -28,7 +29,7 @@ while True:
     if not ret:
         break   # end of video
 
-    results = model(frame, imgsz=IMG_SIZE, conf=CONF_THRESHOLD)
+    results = model(frame, imgsz=IMG_SIZE, conf=CONF_THRESHOLD, iou = IOU_THRESHOLD)
     r = results[0]
     annotated = r.plot()
 
