@@ -15,7 +15,7 @@ AppleVision-Edge fine-tunes a COCO-pretrained YOLOv8 detector for single-class a
 - Cumulative counting on a conveyor belt (via object tracking / line-crossing logic)
 - Per-frame detection for drone-based orchard monitoring and robotic-arm picking targeting
 
-Dataset engineering (multi-source annotation conversion and merging) lives in a companion repository: [apple-dataset-pipeline](#) *(https://github.com/biswas-bit/apple-data-unification)*.
+Dataset engineering (multi-source annotation conversion and merging) lives in a companion repository:[apple-dataset-pipeline](https://github.com/biswas-bit/apple-data-unification).
 
 ---
 
