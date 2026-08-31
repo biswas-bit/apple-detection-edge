@@ -36,9 +36,9 @@ Dataset engineering (multi-source annotation conversion and merging) lives in a 
 | Baseline | Isolated-apple set | 320 | 0.993 | 0.959 | Investigated and attributed to dataset homogeneity / limited scene diversity; failed to generalize on occluded/crowded test images |
 | MinneApple (CIoU, default) | MinneApple detection subset | 320 | 0.710 | 0.296 | Addressed occlusion via orchard-scene data |
 | MinneApple (GIoU ablation) | MinneApple detection subset | 320 | 0.687 | 0.283 | CIoU outperforms GIoU for this task |
-| Merged dataset | Isolated + MinneApple + Fuji | 320 | *TBD* | *TBD* | Combines all three sources |
+| Fuji |  Fuji-SFM | 320 | 0.83 | 0.60 | much better detection when conf is set to 0.4 and IOU to 0.3 |
 
-*(Update this table as later experiments — 640-resolution training, final merged-dataset run, edge-export benchmarks — complete.)*
+
 
 ---
 
