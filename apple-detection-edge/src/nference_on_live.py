@@ -7,11 +7,11 @@ import os
 import cv2
 from ultralytics import YOLO
 
-WEIGHTS_PATH = "apple-detection-edge/models/apples_on_tree.pt"
+WEIGHTS_PATH = "apple-detection-edge/models/apple_detection_v3_fuji.pt"
 VIDEO_PATH = "apple-detection-edge/testimg/apple_in_trees.mp4"
 IMG_SIZE = 320
-CONF_THRESHOLD = 0.25     # standard middle-ground for orchard scenes
-IOU_THRESHOLD = 0.5
+CONF_THRESHOLD = 0.4    
+IOU_THRESHOLD = 0.3
 SAVE_DIR = "apple-detection-edge/annotedimg"
 SAVE_PATH = os.path.join(SAVE_DIR, "tree_detection.mp4")
 
