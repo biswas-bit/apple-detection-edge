@@ -2,7 +2,7 @@
 
 Real-time apple detection and counting system, optimized for edge deployment on Raspberry Pi — from dataset curation to a production-ready quantized model.
 
-<img src="apple-detection-edge/annotedimg/image.png" alt="Alt Text" width="300" height="200" />
+<img src="apple-detection-edge/annotedimg/image.png" alt="Alt Text" width="500" height="500" />
 
 ---
 
