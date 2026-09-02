@@ -80,7 +80,7 @@ apple-detection-edge/
 ## Installation
 
 ```bash
-git clone https://github.com/<your-username>/apple-detection-edge.git
+git clone https://github.com/biswas-bit/apple-detection-edge.git
 cd apple-detection-edge
 pip install -r requirements.txt
 ```
