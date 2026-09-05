@@ -7,7 +7,7 @@ import os
 import cv2
 from ultralytics import YOLO
 
-WEIGHTS_PATH = "apple-detection-edge/models/apple_detection_v3_fuji.pt"
+WEIGHTS_PATH = "apple-detection-edge/models/appledetection_fuji_and_mineapple.tflite"
 VIDEO_PATH = "apple-detection-edge/testimg/apple_in_trees.mp4"
 IMG_SIZE = 320
 CONF_THRESHOLD = 0.4    
