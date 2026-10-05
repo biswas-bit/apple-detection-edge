@@ -26,3 +26,10 @@ To evaluate the deployment efficiency of the trained models, their **trainable p
 | Fuji       |                        **1.06** |                  **64.87** |                             1.58 |                       67.96 |     14.12 |
 | Merged     |                            1.10 |                      34.51 |                         **1.63** |                   **37.81** | **26.45** |
 
+## 3. RAM Usage
+
+| **Model**  | **Format**     | **Model Load (MB)** | **Inference Overhead (MB)** | **Total Memory (MB)** |
+| :--------- | :------------- | ------------------: | --------------------------: | --------------------: |
+| Mine-Apple | FP32 (.pt)     |               19.78 |                       28.07 |                 47.86 |
+| Fuji       | **FP32 (.pt)** |            **8.58** |                        8.01 |                 16.60 |
+| Merged     | INT8 (TFLite)  |                0.02 |                    **4.55** |              **4.58** |
