@@ -17,3 +17,12 @@ To evaluate the deployment efficiency of the trained models, their **trainable p
 | Mine-Apple |        0.65 |             0.26 |             — |          — |            — |
 | Fuji       |    **0.83** |         **0.60** |             — |          — |            — |
 | Merged     |        0.69 |             0.31 |      **0.78** |   **0.62** |   **0.6953** |
+
+## 3. Inference Latency 
+
+| **Model**  | **Pre-processing Latency (ms)** | **Inference Latency (ms)** | **Post-processing Latency (ms)** | **End-to-End Latency (ms)** |   **FPS** |
+| :--------- | ------------------------------: | -------------------------: | -------------------------------: | --------------------------: | --------: |
+| Mine-Apple |                            0.88 |                      52.47 |                             1.29 |                       55.02 |     18.18 |
+| Fuji       |                        **1.06** |                  **64.87** |                             1.58 |                       67.96 |     14.12 |
+| Merged     |                            1.10 |                      34.51 |                         **1.63** |                   **37.81** | **26.45** |
+
