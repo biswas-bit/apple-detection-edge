@@ -12,8 +12,8 @@ To evaluate the deployment efficiency of the trained models, their **trainable p
 
 ## 2. Detection Accuracy
 
-| Model | mAP@0.5 | mAP@0.5:0.95 |
-|:------|--------:|-------------:|
-| **Mine-Apple** |0.65 |0.26 |
-| **Fuji** | 0.83 |0.60 |
-| **Merged** |0.69 | 0.31 |
+| **Model**  | **mAP@0.5** | **mAP@0.5:0.95** | **Precision** | **Recall** | **F1-score** |
+| :--------- | ----------: | ---------------: | ------------: | ---------: | -----------: |
+| Mine-Apple |        0.65 |             0.26 |             — |          — |            — |
+| Fuji       |    **0.83** |         **0.60** |             — |          — |            — |
+| Merged     |        0.69 |             0.31 |      **0.78** |   **0.62** |   **0.6953** |
